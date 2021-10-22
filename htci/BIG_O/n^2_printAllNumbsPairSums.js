@@ -14,6 +14,6 @@ function PrintAllNumsThenPairSum(numbers) {
 }
 
 PrintAllNumsThenPairSum([1, 2, 3, 4, 5])
-
+// Time complexity
 // O(n + n^2) rule 4 drop non dominant
 // BIG O(n^2)
