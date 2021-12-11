@@ -48,3 +48,4 @@ console.log(cities);
 
 cities.reverse();
 console.log(cities);
+  
