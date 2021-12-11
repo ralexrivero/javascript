@@ -33,3 +33,12 @@ for (var i = week.length - 1; i >= 0; i--) {
 		break;
 	}
 }
+
+var colors = ['red', 'green', 'black', 'blue', 'yellow', 'pink']
+
+for(var i = 0; i <= colors.length - 1; i++){
+	if(colors[i] == 'black'){
+		continue;
+	}
+	document.write("color: " + colors[i] + '</br>');
+}
