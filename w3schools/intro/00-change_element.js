@@ -16,13 +16,25 @@ turnOff.addEventListener("click", function() {
     document.getElementById("change-image").src="./pic_bulboff.gif"
 });
 
-const btnSwitch = document.getElementById("btn_display");
-btnSwitch.addEventListener("click", funSwitchPar);
 function funSwitchPar() {
     const par = document.getElementById("paragraph_display");
     if (par.style.display === 'block') {
-        par.style.display='none'
+        par.style.display='none';
     } else {
-        par.style.display='block'
+        par.style.display='block';
     }
+};
+const btnSwitch = document.getElementById("btn_display");
+btnSwitch.addEventListener("click", funSwitchPar);
+
+function funChangeText() {
+    document.getElementById('change_paragraph').innerHTML = "Paragraph has been changed successfully";
 }
+
+let count = 0;
+
+const click_count = document.getElementById('btn_counter');
+click_count.addEventListener('click', function() {
+    count += 1;
+    document.getElementById('counter').innerHTML = `Total: ${count}`;
+});
