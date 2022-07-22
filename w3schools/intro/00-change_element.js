@@ -15,3 +15,14 @@ turnOn.addEventListener("click", function() {
 turnOff.addEventListener("click", function() {
     document.getElementById("change-image").src="./pic_bulboff.gif"
 });
+
+const btnSwitch = document.getElementById("btn_display");
+btnSwitch.addEventListener("click", funSwitchPar);
+function funSwitchPar() {
+    const par = document.getElementById("paragraph_display");
+    if (par.style.display === 'block') {
+        par.style.display='none'
+    } else {
+        par.style.display='block'
+    }
+}
