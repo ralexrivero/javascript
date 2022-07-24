@@ -22,5 +22,5 @@ console.log(d);
 
 console.log(~a); // JavaScript uses 32 bit signed numbers
 
-const e  = a ^ b;
+const e = a ^ b;
 console.log(e);
