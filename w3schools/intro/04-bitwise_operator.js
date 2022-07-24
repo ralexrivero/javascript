@@ -11,7 +11,8 @@ bitwise operators
  - >>> UNSIGNED RIGHT SHIFT
 */
 
-let a = 5, b = 5;
+const a = 5;
+const b = 6;
 
-let c = a & b;
+const c = a & b;
 console.log(c);
