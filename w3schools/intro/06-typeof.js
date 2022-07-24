@@ -12,3 +12,5 @@ const myArr = ['a', 'b'];
 console.log(typeof (myArr));
 let f;
 console.log(typeof (f));
+const g = undefined;
+console.log(typeof (g));
