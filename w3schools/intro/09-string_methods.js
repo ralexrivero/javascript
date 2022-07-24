@@ -19,3 +19,14 @@ const d = 'Espindola';
 const e = a.concat(' ', b, ' ', c, ' ', d);
 console.log(e);
 console.log(a);
+console.log(e.indexOf('Alexander')); // indexOf doesn't accept regex
+console.log(e.indexOf('R'));
+console.log(e.lastIndexOf('R'));
+console.log(e.search(/e/i)); // search method accepts regex
+console.log(e.search('E'));
+const f = 'The rain in SPAIN stays mainly in the plain'
+const g = f.match(/ain/gi); // use regex and will return an array object of matching items
+console.log(g);
+console.log(`g is typeof ${typeof (g)}`);
+console.log(g[1]);
+
