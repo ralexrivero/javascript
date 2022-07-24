@@ -12,7 +12,7 @@ const car = {
   model: 'x',
   color: 'red',
   description: function () {
-    return `Type: ${this.type}\nModel:${this.model}\nColor:${this.color}\n`
+    return `Type: ${this.type}\nModel:${this.model}\nColor:${this.color}\n`;
   }
 };
 
