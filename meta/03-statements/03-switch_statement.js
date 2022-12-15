@@ -7,18 +7,50 @@
     If there is no match, the default code block is executed.
 */
 
-const place = 'first';
+const place = 'morning';
 
 switch (place) {
-  case 'first':
+  case 'morning':
     console.log('Gold');
     break;
-  case 'second':
+  case 'afternoon':
     console.log('Silver');
     break;
-  case 'third':
+  case 'night':
     console.log('Bronze');
     break;
   default:
     console.log('No medal awarded');
 }
+
+let day = 'SUNDAY';
+let activities = {};
+
+day = day.toLowerCase();
+
+switch (day) {
+  case 'monday':
+    activities = { morning: 'JavaScript', afternoon: 'React', night: 'English' };
+    break;
+  case 'tuesday':
+    activities = { morning: 'English', afternoon: 'Python', night: 'English' };
+    break;
+  case 'wednesday':
+    activities = { morning: 'English', afternoon: 'JavaScript', night: 'React' };
+    break;
+  case 'thursday':
+    activities = { morning: 'Machine Learning', afternoon: 'Python', night: 'English' };
+    break;
+  case 'friday':
+    activities = { morning: 'Python', afternoon: 'Machine Learning', night: 'English' };
+    break;
+  case 'saturday':
+    activities = { morning: 'JavaScript', afternoon: 'Python', night: 'English' };
+    break;
+  case 'sunday':
+    activities = { morning: 'English', afternoon: 'Python', night: 'Django' };
+    break;
+}
+
+console.log(activities);
+console.log(typeof (activities));
