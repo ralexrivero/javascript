@@ -11,3 +11,5 @@ const firstName = 'Rony';
 
 console.log(greet + ' ' + firstName + '!');
 console.log(`${greet} ${firstName}!`);
+
+console.log(1 + '2');
