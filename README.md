@@ -94,4 +94,3 @@ adding '%c' to the console.log() method will allow you to style the console outp
 console.log('Hello', 'World');
 console.log('Hello' + 'World');
 ```
-
