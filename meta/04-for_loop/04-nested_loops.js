@@ -16,6 +16,6 @@ const month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'O
 
 for (const x in year) {
   for (const y in month) {
-    console.log(`${year[x]} - ${month[y]}`)
+    console.log(`${year[x]} - ${month[y]}`);
   }
-};
+}
