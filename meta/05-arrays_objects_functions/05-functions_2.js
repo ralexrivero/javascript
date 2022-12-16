@@ -22,3 +22,17 @@ function printArr (arr = []) {
 const myLanguages = ['Python', 'C', 'JavaScript', 'TypeScript', 'SQL', 'VBA'];
 
 printArr(myLanguages);
+
+function letterFinder (word, match) {
+  let i = 0;
+  for (const x in word) {
+    if (word[x] === match) {
+      return console.log(`letter : ${match} matches at index: ${i} in word: ${word}`);
+    } else {
+      i++;
+    }
+  }
+}
+
+letterFinder('Abracadabra', 'r');
+letterFinder('Abracadabra', 'c');
