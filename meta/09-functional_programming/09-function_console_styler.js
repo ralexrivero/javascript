@@ -21,7 +21,7 @@ function celebrateStyler (reason) {
   if (reason == 'birthday') {
     console.log('%cHappy birthday', fontStyle);
   } else if (reason == 'champions') {
-    console.log('%cCongrats con the title!', fontStyle);
+    console.log('%cCongrats on the title!', fontStyle);
   } else {
     console.log(message, style);
   }
