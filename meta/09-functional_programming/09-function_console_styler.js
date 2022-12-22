@@ -1,5 +1,10 @@
 #!/usr/bin/env node
 
+/* console styler
+  The styles are applied to the browser console
+  it runs on node but without style
+*/
+
 // Task 1: Build a function-based console log message generator
 
 function consoleStyler (color, background, fontSize, txt) {
