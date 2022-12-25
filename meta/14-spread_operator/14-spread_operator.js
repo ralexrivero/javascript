@@ -14,3 +14,9 @@ function showItinerary (place1, place2, place3) {
 
 showItinerary(top3[0], top3[1], top3[2]);
 showItinerary(...top3);
+
+// Spread a string into separate array items
+
+const greeting = 'Hello';
+const arrayOfChars = [...greeting];
+console.log(arrayOfChars);
