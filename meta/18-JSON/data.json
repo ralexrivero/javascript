@@ -1,0 +1,20 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Alice",
+      "position": "Manager",
+      "salary": 50000,
+      "skills": ["Leadership", "Communication", "Project Management", "Scrum"]
+    },
+    {
+      "id": 2,
+      "name": "Ronald",
+      "position": "Software Developer",
+      "salary": 75000,
+      "skills": ["Scrum", "Programming", "Communication", "Self learning"]
+    }
+  ],
+  "company": "Xelar Inc.",
+  "location": "Montevideo, Uruguay"
+}
