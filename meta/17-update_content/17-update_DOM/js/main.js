@@ -8,7 +8,7 @@ document.body.innerText = '';
 document.body.appendChild(h1);
 document.body.appendChild(input);
 
-input.addEventListener('change', function() {
+input.addEventListener('change', function () {
   console.log(input.value);
   h1.innerText = `You entered the value: ${input.value}`;
 });
