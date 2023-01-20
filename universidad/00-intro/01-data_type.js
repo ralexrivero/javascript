@@ -28,7 +28,7 @@ varTypes.forEach(element => {
   console.log(`${element} is type: ${typeof element}`);
 });
 
-for (const key of Object.keys(varObject)) { 
+for (const key of Object.keys(varObject)) {
   console.log(`${key}: ${varObject[key]}`);
 }
 
