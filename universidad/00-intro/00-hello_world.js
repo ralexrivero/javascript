@@ -1,2 +1,5 @@
 #!/usr/bin/env node
-console.log('Hello World');
+
+const firstName = 'Ronald';
+
+console.log(`Hello ${firstName}!`);
