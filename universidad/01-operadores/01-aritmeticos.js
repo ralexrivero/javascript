@@ -35,13 +35,33 @@ console.log(d);
 const e = 97 % 3;
 console.log(e);
 
-// increment
-
+// post increment
 let f = 100;
-f++;
+let g = 0;
+
+g = f++;
+console.log(g);
 console.log(f);
 
-// decrement
-let g = 99;
-g--;
+// pre increment
+f = 100;
+g = 0;
+
+g = ++f;
 console.log(g);
+console.log(f);
+
+// post decrement
+let h = 50;
+let i = 0;
+
+i = h--;
+console.log(i);
+console.log(h);
+
+h = 50;
+i = 0;
+
+i = --h;
+console.log(i);
+console.log(h);
