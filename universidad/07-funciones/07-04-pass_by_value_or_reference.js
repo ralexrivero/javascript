@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// primitive types only are passed by value
+// primitive types only are passed by value, the original variable is not modified
 
 const x = 10;
 
@@ -13,7 +13,7 @@ function changeValue (num) {
 changeValue(x);
 console.log(`x value afeter pass to function: ${x}`);
 
-// complex types are passed to functions as references
+// complex types are passed to functions as reference, and the original value is modified
 
 const person = {
   firstName: 'Ronald',
