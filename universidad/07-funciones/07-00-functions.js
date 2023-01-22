@@ -16,3 +16,9 @@ const square = function (a) {
 res = square(99);
 console.log(res);
 
+const nums = [2, 4, 6, 8, 10, 100];
+const double = nums.map(function (num) {
+  return num * 2;
+});
+
+console.log(double);
