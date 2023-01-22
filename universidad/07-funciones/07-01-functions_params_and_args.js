@@ -14,3 +14,20 @@ console.log(res);
 
 res = subtract(8);
 console.log(res);
+
+function addition (a, b, c) {
+  return `${a} + ${b} + ${c} = ${a + b + c}`;
+}
+
+res = addition(1, 2, 3);
+console.log(res);
+
+res = addition(2, 7);
+console.log(res);
+
+function multiply () {
+  return `${arguments[0]} * ${arguments[1]} = ${arguments[0] * arguments[1]}`;
+}
+
+res = multiply(13, 14);
+console.log(res);
