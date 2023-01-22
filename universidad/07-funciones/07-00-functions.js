@@ -22,3 +22,13 @@ const double = nums.map(function (num) {
 });
 
 console.log(double);
+
+// self invoking functions, can't be reutilized
+
+(function () {
+  console.log('Self invoking function');
+})();
+
+(function (a, b) {
+  console.log(`${a} * ${b} = ${a * b}`);
+})(8, 12);
