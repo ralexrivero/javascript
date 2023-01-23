@@ -50,3 +50,12 @@ console.log(car.off());
 console.log(car);
 console.log(car.start());
 console.log(car);
+
+// access using brackets
+console.log(car['color']);
+
+// for in
+console.log('\nfor in:\n');
+for (const prop in car) {
+  console.log(`${prop}: ${car[prop]}`);
+}
