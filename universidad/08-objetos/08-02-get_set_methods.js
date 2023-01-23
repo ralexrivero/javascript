@@ -7,14 +7,26 @@ const person = {
   gender: 'Male',
   age: 42,
   email: 'ralexrivero@gmail.com',
-  languages: ['C', 'Python', 'JavaScript', 'SQL'],
-  stack: ['node', 'Django'],
+  progLanguages: ['C', 'Python', 'JavaScript', 'SQL'],
+  stack: ['node', 'Django', 'Docker', 'bash', 'git', 'GitHub'],
+  languages: ['es', 'en'],
+  set lang (lang) {
+    this.languages.push(lang.toUpperCase());
+  },
+  get lang () {
+    return this.languages.map(function (elem) {
+      return elem.toUpperCase();
+    });
+  },
   get fullName () {
     return `${this.firstName} ${this.sureName}`;
   }
 };
 
-console.log(person);
+/* console.log(person);
 console.log(person.fullName);
+ */
 
-// get
+console.log(person.lang);
+person.lang = 'fr';
+console.log(person.languages);
