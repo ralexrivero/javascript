@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-// complex objects has methods and properties
+// literal objects without inheritance from prototype Object
+
+console.log('\nLiteral object **************************************************************************\n');
 
 const person = {
   // properties
@@ -19,3 +21,32 @@ const person = {
 console.log(person);
 console.log('email: ' + person.email);
 console.log(person.fullName());
+
+// Create an object that inherits properties and methods from prototype Object
+
+console.log('\nPrototype Object **************************************************************************\n');
+const car = new Object();
+console.log(car);
+
+car.brand = 'Tesla';
+car.model = 'M3';
+car.year = 2023;
+car.seats = 7;
+car.color = 'blue';
+car.engineStatus = true;
+car.start = function () {
+  this.engineStatus = true;
+  return `start engine on ${this.brand} ${this.model}: status ${this.engineStatus}`;
+};
+car.off = function () {
+  this.engineStatus = false;
+  return `${this.brand} ${this.model} engine is off`;
+};
+
+console.log(car.start());
+
+console.log(car);
+console.log(car.off());
+console.log(car);
+console.log(car.start());
+console.log(car);
