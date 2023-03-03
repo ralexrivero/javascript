@@ -1,0 +1,199 @@
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #ddd;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.calculator {
+  background: #eee;
+  padding: .5rem;
+  margin: .5rem;
+  border: 1px solid #ccc;
+  border-radius: .5rem;
+  box-shadow: 0 0 1rem -.5rem rgba(0,0,0,.7); /* x-offset, y-offset, blur, spread, color */
+  width: 98%;
+}
+
+.calculator-display {
+  background: #222;
+  color: #eee;
+  font-size: 1.5rem;
+  padding: .5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+  box-shadow: 0 0 1rem -.5rem rgba(0,0,0,.7); /* x-offset, y-offset, blur, spread, color */
+}
+
+.calculator-display__input {
+  word-wrap: break-word;
+  text-align:end;
+}
+
+/*******************************
+  Calculator Buttons Grid
+*******************************/
+
+.calculator-buttons {
+  display: grid;
+  grid-template-areas:
+  "seven eight nine multiply clear"
+  "four five six divide equal-sign"
+  "one two three subtract equal-sign"
+  "zero zero decimal add equal-sign";
+  grid-gap: .5rem;
+  padding: .5rem;
+}
+
+.add {
+  grid-area: add;
+}
+
+.subtract {
+  grid-area: subtract;
+}
+
+.multiply {
+  grid-area: multiply;
+}
+
+.divide {
+  grid-area: divide;
+}
+
+.seven {
+  grid-area: seven;
+}
+
+.eight {
+  grid-area: eight;
+}
+
+.nine {
+  grid-area: nine;
+}
+
+.four {
+  grid-area: four;
+}
+
+.five {
+  grid-area: five;
+}
+
+.six {
+  grid-area: six;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.zero {
+  grid-area: zero;
+}
+
+.decimal {
+  grid-area: decimal;
+}
+
+.clear {
+  grid-area: clear;
+}
+
+.equal-sign {
+  grid-area: equal-sign;
+
+}
+
+/*******************************
+  Calculator Button Styles
+*******************************/
+
+button {
+  background: #eee;
+  color: #222;
+  font-size: 1.2rem;
+  padding: .75rem .5rem;
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+  box-shadow: 0 0 1rem -.5rem rgba(0,0,0,.7); /* x-offset, y-offset, blur, spread, color */
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+button:hover {
+  background: #ccc;
+}
+
+button:active {
+  background: #aaa;
+}
+
+.operators {
+  background: #555;
+  color: #eee;
+}
+
+.operators:hover {
+  background: #444;
+}
+
+.operators:active {
+  background: #333;
+}
+
+.clear {
+  background: #EE7787;
+  color: #eee;
+  font-weight: 900;
+}
+
+.clear:hover {
+  background: #EB6173;
+}
+
+.clear:active {
+  background: #E84A5F;
+}
+
+.equal-sign {
+  background: #7D9B85;
+  color: #eee;
+  font-weight: 900;
+}
+
+.equal-sign:hover {
+  background: #688A71;
+}
+
+.equal-sign:active {
+  background: #52795D;
+}
+
+@media screen and (min-width: 768px) {
+  .calculator {
+    width: 24rem;
+  }
+}
