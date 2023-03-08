@@ -14,7 +14,6 @@ const botones = document.querySelectorAll('button');
 let primerTermino = 0;
 let operadorIngresado = '';
 let banderaTerminoSiguiente = false; // indica si debe esperar el siguiente término
-let banderaResultadoEnviado = false; // indica si ha presionado =
 
 /**
  * operaciones - cada miembro llama una funcion anonima con la operacion correspondiente
@@ -59,6 +58,7 @@ botones.forEach((boton) => {
  * @param valor - valor recibido desde los botones
  */
 function enviarNumero (valor) {
+  console.log(valor);
   // si el display esta en cero, lo reemplaza, si no agrega el numero
   const displayValor = display.textContent; // text content muestra valores de textos escondidos si lo estan
   if (banderaTerminoSiguiente === true) {
@@ -76,12 +76,15 @@ function enviarNumero (valor) {
  * @returns nada si hay un operador o si ya tiene un punto decimal
  */
 function agregarDecimal () {
+  console.log('decimal');
   // si se ingreso el operador, no se puede ingresar un punto decimal
   if (banderaTerminoSiguiente === true) {
     return; // se termina la funcion, no se ejecuta mas nada aqui y se devuelve el control a quien llamo a la funcion
   }
   // si no existe el punto decimal, agrego uno y solo uno
-  if (!display.textContent.includes('.')) {
+  if (display.textContent.includes('.')) {
+    return;
+  } else {
     display.textContent += '.';
   }
 }
@@ -90,18 +93,19 @@ function agregarDecimal () {
  * resultado - muestra el resultado de la operacion
  */
 function resultado () {
+  console.log('=');
   const valorActual = Number(display.textContent);
   const resultadoFinal = operaciones[operadorIngresado](primerTermino, valorActual);
   display.textContent = resultadoFinal;
   primerTermino = resultadoFinal;
   banderaTerminoSiguiente = true;
-  banderaResultadoEnviado = true;
 }
 
 /**
  * borrarTodo - borrar el display y los valores de las variables
  */
 function borrarTodo () {
+  console.log('C');
   // resetear todos los valores
   display.textContent = '0';
   primerTermino = 0;
@@ -115,16 +119,12 @@ function borrarTodo () {
  *
  */
 function usarOperador (operador) {
+  console.log(operador);
   const valorActual = Number(display.textContent); // convertir el valor actual del display a número
   // asignar primer valor sino existe
   if (!primerTermino) {
     primerTermino = valorActual;
   }
-
-  if (banderaResultadoEnviado === true) {
-    primerTermino = valorActual;
-  }
-
   banderaTerminoSiguiente = true; // listo para el siguiente valor
   operadorIngresado = operador;
 }
